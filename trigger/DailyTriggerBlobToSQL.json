@@ -1,0 +1,25 @@
+{
+	"name": "DailyTriggerBlobToSQL",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "CopyPipeline_BlobToSQLDatabase",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Hour",
+				"interval": 3,
+				"startTime": "2021-07-04T07:27:00Z",
+				"endTime": "2021-07-04T19:27:00Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}
